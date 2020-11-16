@@ -1,0 +1,5 @@
+include ':AndroidLibrary'
+include ':oversee'
+rootProject.name='RemoteUpdater'
+include ':app'
+include ':updater'

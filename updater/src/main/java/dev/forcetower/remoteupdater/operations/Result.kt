@@ -1,0 +1,6 @@
+package dev.forcetower.remoteupdater.operations
+
+sealed class Result<out T> {
+    data class Success<T>(val value: T) : Result<T>()
+    data class Error<T>(val error: Throwable, val code: Int): Result<T>()
+}
